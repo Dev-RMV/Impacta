@@ -1,0 +1,67 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <p>Hoje é: @DateTime.Now</p>
+    <hr />
+    @for (int i = 0; i <= 10; i++)
+    {
+        <p>Ovalor de i é: @i</p>
+    }
+    <hr />
+    @{
+        var numeros = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };//um objeto baseado na classe int. O tipo do VAR assume o q está na classe construtura.
+        foreach (int z in numeros)
+        {
+            <p>O valor de z é: @z</p>
+        }
+    }
+    <hr />
+    @{
+        @if (DateTime.Now.DayOfWeek == DayOfWeek.Wednesday)
+        {
+            <span>Hoje é Quarta-feira.</span> <br>
+            <span>Agora são: @DateTime.Now.ToLongTimeString()</span>
+        }
+        else
+        {
+            <span>Hoje não é Quarta Feita</span>
+        }
+    }
+    <hr />
+    @switch (DateTime.Now.Hour)
+    {
+        case 12:
+        case 13:
+            <p>Hora do almoço</p>
+            break;
+        case 19:
+        case 20:
+            <p>Hora do jantar</p>
+            break;
+        default:
+            <p>Não é hora de jantar nem almoçar</p>
+            break;
+    }
+    <hr />
+
+    @{
+        int k = 0;        
+        while (k <= 10)
+        {
+            int j = 0;
+            while (j <= 10)
+            {
+                <p> @k X  @j = @(k*j)</p>
+                j++;                
+            }
+            <hr />
+            k++;
+        }
+    }
+    <hr />
+    
+</div>

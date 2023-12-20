@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Capitulo02.Razor/1.0.0": {
+        "runtime": {
+          "Capitulo02.Razor.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Capitulo02.Razor/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
