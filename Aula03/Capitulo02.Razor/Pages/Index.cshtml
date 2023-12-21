@@ -17,7 +17,7 @@
         double impostos = custoFabrica * 0.45;
         double porcentagemDistribuidor = custoFabrica * 0.28;        
         <p>Custo final ao consumidor: @(custoFabrica+impostos+porcentagemDistribuidor)</p>
-        
+
     }
 </div>
 <div>
@@ -29,6 +29,18 @@
         o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
         (considere que o mês possua 4 semanas exatas).
     </p><br />
+    @{
+        double salarioHora = 10;
+        double[] horasTrabalhadas = {42,40,40,40 };
+        double salarioHoraExtra = salarioHora * 1.5;
+        double salarioTotal = 0;
+        @foreach(int horasNaSemana in horasTrabalhadas)
+        {
+            if (horasNaSemana <= 40) salarioTotal += horasNaSemana * salarioHora;
+            else salarioTotal += 40 * salarioHora+((horasNaSemana-40)*salarioHoraExtra);
+        }
+        <p>Salário total, incluindo horas extras: @salarioTotal</p>
+    }
 </div>
 <div>
     <h1>EXERCÍCIO 03</h1>
