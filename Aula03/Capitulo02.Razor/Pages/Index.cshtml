@@ -5,6 +5,50 @@
 }
 
 <div>
+    <h1>EXERCÍCIO 01</h1>
+    <p>
+        1) O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do
+        distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor
+        seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro,
+        calcular e escrever o custo final ao consumidor.
+    </p><br />
+    @{
+        double custoFabrica = 100;
+        double impostos = custoFabrica * 0.45;
+        double porcentagemDistribuidor = custoFabrica * 0.28;        
+        <p>Custo final ao consumidor: @(custoFabrica+impostos+porcentagemDistribuidor)</p>
+        
+    }
+</div>
+<div>
+    <h1>EXERCÍCIO 02</h1>
+    <p>
+        2) A jornada de trabalho semanal de um funcionário é de 40 horas. O funcionário que trabalhar mais
+        de 40 horas receberá hora extra, cujo cálculo é o valor da hora regular com um acréscimo de 50%.
+        Escreva um algoritmo que leia o número de horas trabalhadas em um mês, o salário por hora e escreva
+        o salário total do funcionário, que deverá ser acrescido das horas extras, caso tenham sido trabalhadas
+        (considere que o mês possua 4 semanas exatas).
+    </p><br />
+</div>
+<div>
+    <h1>EXERCÍCIO 03</h1>
+    <p>
+        3) Faça um algoritmo para ler: número da conta do cliente, saldo, débito e crédito. Após, calcular e
+        escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
+        ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'
+    </p><br />
+</div>
+<div>
+    <h1>EXERCÍCIO 04</h1>
+    <p>
+        As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
+        compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
+        escreva o custo total da compra.<br />        
+    </p>
+</div>
+
+
+<div>
     <p>Hoje é: @DateTime.Now</p>
     <hr />
     @for (int i = 0; i <= 10; i++)
@@ -49,19 +93,19 @@
     <hr />
 
     @{
-        int k = 0;        
+        int k = 0;
         while (k <= 10)
         {
             int j = 0;
             while (j <= 10)
             {
-                <p> @k X  @j = @(k*j)</p>
-                j++;                
+                <p> @k X  @j = @(k * j)</p>
+                j++;
             }
             <hr />
             k++;
         }
     }
     <hr />
-    
+
 </div>
