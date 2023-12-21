@@ -15,8 +15,8 @@
     @{
         double custoFabrica = 100;
         double impostos = custoFabrica * 0.45;
-        double porcentagemDistribuidor = custoFabrica * 0.28;        
-        <p>Custo final ao consumidor: @(custoFabrica+impostos+porcentagemDistribuidor)</p>
+        double porcentagemDistribuidor = custoFabrica * 0.28;
+        <p>Custo final ao consumidor: @(custoFabrica + impostos + porcentagemDistribuidor)</p>
 
     }
 </div>
@@ -31,13 +31,13 @@
     </p><br />
     @{
         double salarioHora = 10;
-        double[] horasTrabalhadas = {42,40,40,40 };
+        double[] horasTrabalhadas = { 42, 40, 40, 40 };
         double salarioHoraExtra = salarioHora * 1.5;
         double salarioTotal = 0;
-        @foreach(int horasNaSemana in horasTrabalhadas)
+        @foreach (int horasNaSemana in horasTrabalhadas)
         {
             if (horasNaSemana <= 40) salarioTotal += horasNaSemana * salarioHora;
-            else salarioTotal += 40 * salarioHora+((horasNaSemana-40)*salarioHoraExtra);
+            else salarioTotal += 40 * salarioHora + ((horasNaSemana - 40) * salarioHoraExtra);
         }
         <p>Salário total, incluindo horas extras: @salarioTotal</p>
     }
@@ -49,13 +49,30 @@
         escrever o saldo atual (saldo atual = saldo - débito + crédito). Também testar se saldo atual for maior
         ou igual a zero escrever a mensagem 'Saldo Positivo', senão escrever a mensagem 'Saldo Negativo'
     </p><br />
+    @{
+        int numero = 4453345;
+        double saldo = 10;
+        double debito = 30;
+        double credito = 10;
+        double saldoAtual = saldo - debito + credito;
+        <p>Saldo atual: @saldoAtual</p>
+        @if (saldoAtual >= 0)
+        {
+            <p>Saldo Positivo</p>
+        }
+        else
+        {
+            <p>Saldo negativo</p>
+        }
+    }
+
 </div>
 <div>
     <h1>EXERCÍCIO 04</h1>
     <p>
         As maçãs custam R$ 1,30 cada se forem compradas menos de uma dúzia, e R$ 1,00 se forem
         compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
-        escreva o custo total da compra.<br />        
+        escreva o custo total da compra.<br />
     </p>
 </div>
 
