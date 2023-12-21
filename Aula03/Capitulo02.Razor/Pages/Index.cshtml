@@ -74,8 +74,22 @@
         compradas pelo menos 12. Escreva um programa que leia o número de maçãs compradas, calcule e
         escreva o custo total da compra.<br />
     </p>
-</div>
+    @{
+        int quantidadeComprada = 12;
+        double valorCheio = 1.30;
+        double valorComDesconto = 1;
+        double totalDaCompra = 0;
+        @if (quantidadeComprada >= 12)
+        {
+            totalDaCompra = valorComDesconto * quantidadeComprada;
+        }
+        else totalDaCompra = valorCheio * quantidadeComprada;
 
+        <p>Maçãs compradas: @quantidadeComprada no total de R$ @totalDaCompra</p>
+    }
+</div>
+<h1>Fim dos exercícios</h1>
+<hr />
 
 <div>
     <p>Hoje é: @DateTime.Now</p>
