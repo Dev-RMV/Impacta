@@ -134,21 +134,25 @@
             break;
     }
     <hr />
-
+    <div>
     @{
         int k = 0;
         while (k <= 10)
         {
             int j = 0;
-            while (j <= 10)
-            {
-                <p> @k X  @j = @(k * j)</p>
-                j++;
-            }
-            <hr />
-            k++;
+            <div class="col-1">
+                @{
+                    while (j <= 10)
+                    {
+                        <p> @k X  @j = @(k * j)</p>
+                        j++;
+                    }                    
+                    k++;
+                }
+            </div>
         }
     }
+    </div>
     <hr />
 
 </div>
