@@ -1,4 +1,9 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Aula05.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Aula05Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Aula05Context") ?? throw new InvalidOperationException("Connection string 'Aula05Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

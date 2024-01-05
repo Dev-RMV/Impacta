@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Aula05_SisCad.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<Aula05_SisCadContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Aula05_SisCadContext") ?? throw new InvalidOperationException("Connection string 'Aula05_SisCadContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
