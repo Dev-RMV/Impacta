@@ -19,13 +19,46 @@ namespace Aula05.Controllers
             _context = context;
         }
 
-        // GET: Movie
-        public async Task<IActionResult> Index()
+        // GET: Movie - utilizando uma variavel (searchString) para a busca por passagem de parametro - localhost:porta/movie/index?searchString=nome
+        public async Task<IActionResult> Index(string searchString)
         {
-              return _context.Movie != null ? 
-                          View(await _context.Movie.ToListAsync()) :
-                          Problem("Entity set 'Aula05Context.Movie'  is null.");
+            if (_context.Movie == null)
+            {
+                return _context.Movie != null ?
+                         View(await _context.Movie.ToListAsync()) :
+                         Problem("Entity set 'Aula05Context.Movie'  is null.");
+            }
+            //LINQ adicionado 
+            var movies = from m in _context.Movie select m;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s=>s.Title!.Contains(searchString));
+            }
+
+            return View(await movies.ToListAsync());
         }
+        
+        /*
+        public async Task<IActionResult> Index(string id)
+        {
+            if (_context.Movie == null)
+            {
+                return _context.Movie != null ?
+                         View(await _context.Movie.ToListAsync()) :
+                         Problem("Entity set 'Aula05Context.Movie'  is null.");
+            }
+            //LINQ adicionado 
+            var movies = from m in _context.Movie select m;
+            if (!String.IsNullOrEmpty(id))
+            {
+                movies = movies.Where(s => s.Title!.Contains(id));
+            }
+
+            return View(await movies.ToListAsync());
+        }
+        */
+
+
 
         // GET: Movie/Details/5
         public async Task<IActionResult> Details(int? id)

@@ -20,12 +20,56 @@ namespace Aula05_SisCad.Controllers
         }
 
         // GET: Clientes
+        /*
         public async Task<IActionResult> Index()
         {
               return _context.Clientes != null ? 
                           View(await _context.Clientes.ToListAsync()) :
                           Problem("Entity set 'Aula05_SisCadContext.Clientes'  is null.");
         }
+        */
+        
+        
+        /*public async Task<IActionResult> Index(string searchString)
+        {
+            if (_context.Clientes == null)
+            {
+                return _context.Clientes != null ?
+                         View(await _context.Clientes.ToListAsync()) :
+                         Problem("Entity set 'Aula05_SisCadContext.Clientes'  is null.");
+            }
+            //LINQ adicionado 
+            var movies = from c in _context.Clientes select c;
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                movies = movies.Where(s => s.Name!.Contains(searchString));
+            }
+
+            return View(await movies.ToListAsync());
+        }*/
+
+        public async Task<IActionResult> Index(int searchTel)
+        {
+            if (_context.Clientes == null)
+            {
+                return _context.Clientes != null ?
+                         View(await _context.Clientes.ToListAsync()) :
+                         Problem("Entity set 'Aula05_SisCadContext.Clientes'  is null.");
+            }
+            //LINQ adicionado 
+            var movies = from c in _context.Clientes select c;
+            if (searchTel!=0)
+            {
+                movies = movies.Where(s => s.Telefone.ToString().Contains(searchTel.ToString()));
+                return View(await movies.ToListAsync());
+            }
+
+            return View(await _context.Clientes.ToListAsync());
+        }
+
+
+
+
 
         // GET: Clientes/Details/5
         public async Task<IActionResult> Details(int? id)
