@@ -1,10 +1,10 @@
 ﻿@model Aula05.Models.Movie
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Criar Novo";
 }
 
-<h1>Create</h1>
+<h1>Criar Novo</h1>
 
 <h4>Movie</h4>
 <hr />
@@ -40,9 +40,10 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index" class="btn btn-secondary"><i class="bi bi-skip-backward"></i> Voltar à Lista</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script src="@Url.Content("~/js/jquery.validate.pt-BR.js")"></script>
 }

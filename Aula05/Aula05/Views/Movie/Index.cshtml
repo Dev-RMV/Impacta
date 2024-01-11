@@ -1,23 +1,25 @@
 ﻿@model IEnumerable<Aula05.Models.Movie>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Índice";
 }
 
-<h1>Index</h1>
+<h1>Índice</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary"><i class="bi bi-file-earmark"></i> Criar Novo</a>
 </p>
 
 <!--form inserido-->
-<form asp-controller="Movie" asp-action="Index">
-    <p>Titulo<input type="text" name="searchString"/>
-       <input type="submit" value="filtrar" /> 
-    </p>
-
-</form>
-
+<div class="col-md-4">
+    <form asp-controller="Movie" asp-action="Index">
+        <p>
+            <label class="col-form-label">Título</label><!--Label-->
+            <input type="text" name="searchString" /><!--Campo para inserir texto-->
+            <button type="submit" class="btn-secondary"><i class="bi bi-search"></i> Procurar</button><!--O btn tbm serve para submit-->
+        </p>
+    </form>
+</div>
 
 <table class="table">
     <thead>
@@ -60,9 +62,9 @@
                     @Html.DisplayFor(modelItem => item.Price)
                 </td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-dark"><i class="bi bi-pencil-square"></i> Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-info"><i class="bi bi-info-square"></i> Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger"><i class="bi bi-trash3"></i> Deletar</a>
                 </td>
             </tr>
         }

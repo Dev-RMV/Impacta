@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fHEnxd0R+QfSCNIodk64gKVwMKcY6u1AJcyp02+4Vhw=",
+  "Hash": "8fTbKwDlvKJbaNRxEqN70sFToQSWEwPR7avvhCTF5hw=",
   "Source": "Aula05",
   "BasePath": "_content/Aula05",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Impacta\\Aula05\\Aula05\\wwwroot\\js\\jquery.validate.pt-Br.js",
+      "SourceId": "Aula05",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Impacta\\Aula05\\Aula05\\wwwroot\\",
+      "BasePath": "_content/Aula05",
+      "RelativePath": "js/jquery.validate.pt-Br.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\jquery.validate.pt-Br.js"
     },
     {
       "Identity": "C:\\Impacta\\Aula05\\Aula05\\wwwroot\\js\\site.js",

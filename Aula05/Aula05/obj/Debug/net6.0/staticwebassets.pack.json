@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Impacta\\Aula05\\Aula05\\wwwroot\\js\\jquery.validate.pt-Br.js",
+      "PackagePath": "staticwebassets\\js\\jquery.validate.pt-Br.js"
+    },
+    {
       "Id": "C:\\Impacta\\Aula05\\Aula05\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

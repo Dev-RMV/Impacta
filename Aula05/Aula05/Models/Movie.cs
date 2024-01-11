@@ -11,7 +11,9 @@ namespace Aula05.Models
         [DataType(DataType.Date)]
         [DisplayName("Ano lançamento")]
         public DateTime ReleaseDate { get; set; }
+        [DisplayName("Gênero")]
         public string? Genre { get; set; }
+        [DisplayName("Preço")]
         public decimal Price { get; set; }
     }
 }

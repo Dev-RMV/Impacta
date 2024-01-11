@@ -20,11 +20,23 @@ namespace Aula05_SisCad.Controllers
         }
 
         // GET: Produtos
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string searchName)
         {
-              return _context.Produtos != null ? 
+            if (_context.Produtos == null)
+            {
+                return _context.Produtos != null ?
                           View(await _context.Produtos.ToListAsync()) :
                           Problem("Entity set 'Aula05_SisCadContext.Produtos'  is null.");
+            }
+            
+            if (searchName != null)
+            {
+                var produtos = from p in _context.Produtos select p;
+                produtos = produtos.Where(p => p.Produto!.Contains(searchName));
+                return View(await produtos.ToListAsync());
+            }                    
+            return View(await _context.Produtos.ToListAsync());
+              
         }
 
         // GET: Produtos/Details/5
