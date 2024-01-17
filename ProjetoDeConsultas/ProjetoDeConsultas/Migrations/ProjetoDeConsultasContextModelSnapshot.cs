@@ -66,8 +66,9 @@ namespace ProjetoDeConsultas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("Data")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("Horario")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Medico")
                         .IsRequired()
@@ -95,6 +96,46 @@ namespace ProjetoDeConsultas.Migrations
                     b.ToTable("Especialidade");
                 });
 
+            modelBuilder.Entity("ProjetoDeConsultas.Models.Exame", b =>
+                {
+                    b.Property<int>("ExameId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ExameId"), 1L, 1);
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("NomeExame")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ExameId");
+
+                    b.ToTable("Exame");
+                });
+
+            modelBuilder.Entity("ProjetoDeConsultas.Models.Horario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<DateTime>("Fim")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("Inicio")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Horario");
+                });
+
             modelBuilder.Entity("ProjetoDeConsultas.Models.Medico", b =>
                 {
                     b.Property<int>("Id")
@@ -111,6 +152,9 @@ namespace ProjetoDeConsultas.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Horarios")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -118,6 +162,31 @@ namespace ProjetoDeConsultas.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Medico");
+                });
+
+            modelBuilder.Entity("ProjetoDeConsultas.Models.RequisicaoExame", b =>
+                {
+                    b.Property<int>("RequisicaoExameId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RequisicaoExameId"), 1L, 1);
+
+                    b.Property<string>("Cliente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Exame")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Medico")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("RequisicaoExameId");
+
+                    b.ToTable("RequisicaoExame");
                 });
 #pragma warning restore 612, 618
         }

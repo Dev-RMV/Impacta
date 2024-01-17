@@ -8,12 +8,12 @@ namespace ProjetoDeConsultas.Models
         [Required]
         public int Id { get; set; }
         [Required]
-        public string Medico { get; set; }
+        public string Medico { get; set; }//a pegar da tabela Medico
         [Required]
         [DisplayName("Paciente")]
-        public string Cliente { get; set; }
+        public string Cliente { get; set; }//a pegar da tabela Cliente
         [Required]
-        public DateTime Data { get; set; }
+        public string Horario { get; set; } //a pegar da tabela horarios
 
     }
 }

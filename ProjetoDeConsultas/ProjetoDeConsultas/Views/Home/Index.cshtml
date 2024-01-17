@@ -3,6 +3,32 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">A saber...</h1>
+    <p>
+        Entidades: </br>
+        -Cliente </br>
+        -Medico </br>
+        -Consulta </br>
+        -Especialidade (dos medicos) </br>
+        -RequisicaoExame (1 Exame, 1 Medico requisita, 1Cleinte faz) </br>
+        -Exames (os basicos a serem ofertados pela clinica)
+        -Horarios </br></br>
+
+        <hr />
+
+        Relacionamentos </br>
+        -Cliente (tem 1 lista de N Exames que fez)
+        -Consulta (tem 1 medico, 1 cliente, 1 horario) </br>
+        -Medico (tem 1 especialidade, 1 lista de N Horarios) </br>
+        -Especialidade(tem N Medicos) </br>
+        -RequisicaoExame (tem 1 Medico que requisita, 1 Cliente que faz, 1 Exame dos tipos ofertados) </br>
+        -Horarios </br>
+
+        <hr />
+
+        Logica de negocios </br>
+        -As Consultas para serem marcadas dependem do Horario disponivel do Medico <br />
+        -Os as Requisicoes de Exames precisam de 1 Medico que requisita, 1 Cliente que faz, e ser de 1 dos tipos ofertados </br>
+        </a>.
+    </p>
 </div>

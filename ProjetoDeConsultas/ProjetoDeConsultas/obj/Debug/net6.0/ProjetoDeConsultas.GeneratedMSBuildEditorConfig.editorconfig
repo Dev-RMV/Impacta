@@ -78,12 +78,52 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwZWNpYWxpZGFkZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Exame/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Exame/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Exame/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Exame/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Exame/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhhbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Horario/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Horario/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Horario/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Horario/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Horario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9yYXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Medico/Create.cshtml]
@@ -104,6 +144,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Medico/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWNvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/RequisicaoExame/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlzaWNhb0V4YW1lXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/RequisicaoExame/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlzaWNhb0V4YW1lXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/RequisicaoExame/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlzaWNhb0V4YW1lXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/RequisicaoExame/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlzaWNhb0V4YW1lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/RequisicaoExame/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVxdWlzaWNhb0V4YW1lXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Impacta/ProjetoDeConsultas/ProjetoDeConsultas/Views/Shared/Error.cshtml]

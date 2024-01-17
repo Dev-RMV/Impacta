@@ -14,6 +14,7 @@ namespace ProjetoDeConsultas.Models
         [DisplayName("CRM")]
         public string Crm { get; set;}
         [Required]
-        public string Especialidade { get; set; }
+        public string? Especialidade { get; set; }//a pegar da tabela Especialidade
+        public string? Horarios {  get; set; } //a pegar da tabela Horarios
     }
 }

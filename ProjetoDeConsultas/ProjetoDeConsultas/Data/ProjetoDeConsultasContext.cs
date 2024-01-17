@@ -21,5 +21,11 @@ namespace ProjetoDeConsultas.Data
         public DbSet<ProjetoDeConsultas.Models.Medico>? Medico { get; set; }
 
         public DbSet<ProjetoDeConsultas.Models.Consulta>? Consulta { get; set; }
+
+        public DbSet<ProjetoDeConsultas.Models.Exame>? Exame { get; set; }
+
+        public DbSet<ProjetoDeConsultas.Models.Horario>? Horario { get; set; }
+
+        public DbSet<ProjetoDeConsultas.Models.RequisicaoExame>? RequisicaoExame { get; set; }
     }
 }
