@@ -3,6 +3,7 @@ using Aula13_ControleAutomoveis.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aula13_ControleAutomoveis.Migrations
 {
     [DbContext(typeof(Aula13_ControleAutomoveisContext))]
-    partial class Aula13_ControleAutomoveisContextModelSnapshot : ModelSnapshot
+    [Migration("20240118230203_VagaInserida")]
+    partial class VagaInserida
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

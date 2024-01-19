@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Aula13_ControleAutomoveis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddb07df6956ad13bc3a98df0e58059ef5a555261")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ee4963a9c0c2359db1be83ce9faff2e80ee8efd")]
 [assembly: System.Reflection.AssemblyProductAttribute("Aula13_ControleAutomoveis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Aula13_ControleAutomoveis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

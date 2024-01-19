@@ -1,10 +1,10 @@
 ﻿@model Aula13_ControleAutomoveis.Models.Proprietario
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Detalhes";
 }
 
-<h1>Details</h1>
+<h1>Detalhes</h1>
 
 <div>
     <h4>Proprietario</h4>
@@ -31,6 +31,6 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ProprietarioId">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" class="btn btn-secondary" asp-route-id="@Model?.ProprietarioId"><i class="bi bi-pencil-square"></i> Editar</a>  |
+    <a asp-action="Index" class="btn btn-warning"><i class="bi bi-skip-backward"></i> Voltar a lista</a>
 </div>

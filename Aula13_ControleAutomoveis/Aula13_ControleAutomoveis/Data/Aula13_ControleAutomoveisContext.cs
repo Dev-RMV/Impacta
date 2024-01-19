@@ -17,5 +17,7 @@ namespace Aula13_ControleAutomoveis.Data
         public DbSet<Aula13_ControleAutomoveis.Models.Proprietario> Proprietario { get; set; } = default!;
 
         public DbSet<Aula13_ControleAutomoveis.Models.Veiculo>? Veiculo { get; set; }
+
+        public DbSet<Aula13_ControleAutomoveis.Models.Vaga>? Vaga { get; set; }
     }
 }
