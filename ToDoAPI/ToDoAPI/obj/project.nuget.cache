@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zDRtHDBax9Yc08feiqXZlz5fNLcxFPWfxMOF5sxsZEIS1C4V9Aad/im4x8Mrkb8z4WBziFdJPqQrOmiV56Plgw==",
+  "success": true,
+  "projectFilePath": "C:\\Impacta\\ToDoAPI\\ToDoAPI\\ToDoAPI.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rmvor\\.nuget\\packages\\fsharp.core\\8.0.100\\fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
